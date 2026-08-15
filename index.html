@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rafael Ganzer — Copywriting Portfolio</title>
+<meta name="description" content="Rafael Ganzer — Content & Brand Strategy, Copywriting, CRM. 13 years, 3 languages, iGaming, aviation, cinema and education.">
+<style>
+@font-face{font-family:'Archivo';src:url('fonts/archivo-latin-400-normal.woff2')format('woff2');font-weight:400;font-display:swap;}
+@font-face{font-family:'Archivo';src:url('fonts/archivo-latin-500-normal.woff2')format('woff2');font-weight:500;font-display:swap;}
+@font-face{font-family:'Archivo';src:url('fonts/archivo-latin-600-normal.woff2')format('woff2');font-weight:600;font-display:swap;}
+@font-face{font-family:'Archivo';src:url('fonts/archivo-latin-700-normal.woff2')format('woff2');font-weight:700;font-display:swap;}
+@font-face{font-family:'Archivo';src:url('fonts/archivo-latin-800-normal.woff2')format('woff2');font-weight:800;font-display:swap;}
+@font-face{font-family:'Archivo';src:url('fonts/archivo-latin-900-normal.woff2')format('woff2');font-weight:900;font-display:swap;}
+@font-face{font-family:'Inter';src:url('fonts/inter-latin-300-normal.woff2')format('woff2');font-weight:300;font-display:swap;}
+@font-face{font-family:'Inter';src:url('fonts/inter-latin-400-normal.woff2')format('woff2');font-weight:400;font-display:swap;}
+@font-face{font-family:'Inter';src:url('fonts/inter-latin-500-normal.woff2')format('woff2');font-weight:500;font-display:swap;}
+@font-face{font-family:'Inter';src:url('fonts/inter-latin-600-normal.woff2')format('woff2');font-weight:600;font-display:swap;}
+@font-face{font-family:'Inter';src:url('fonts/inter-latin-700-normal.woff2')format('woff2');font-weight:700;font-display:swap;}
+@font-face{font-family:'Source Serif';src:url('fonts/source-serif-4-latin-400-normal.woff2')format('woff2');font-weight:400;font-display:swap;}
+@font-face{font-family:'Source Serif';src:url('fonts/source-serif-4-latin-400-italic.woff2')format('woff2');font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:'Source Serif';src:url('fonts/source-serif-4-latin-600-normal.woff2')format('woff2');font-weight:600;font-display:swap;}
+@font-face{font-family:'Source Serif';src:url('fonts/source-serif-4-latin-700-normal.woff2')format('woff2');font-weight:700;font-display:swap;}
+
+:root{
+  --ink:#0E1C29; --gold:#E9A340; --gold-d:#C9862A;
+  --paper:#FBFAF7; --warm:#F2EDE4; --line:#DDD6C9; --mut:#5C6975; --mut-l:#9AA5B1;
+  --tif-bg:#F7F3EE; --tif-line:#DCCFB8; --tif-gold:#B08D3E; --tif-ink:#2B2420; --tif-mut:#8A7A63;
+}
+*{ margin:0; padding:0; box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{ font-family:'Inter',sans-serif; color:var(--ink); background:var(--paper); line-height:1.6; }
+.wrap{ max-width:760px; margin:0 auto; padding:0 24px; }
+img{ max-width:100%; }
+strong{ font-weight:600; }
+
+.lbl{ font-family:'Archivo',sans-serif; font-weight:700; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold-d); }
+.dark .lbl{ color:var(--gold); }
+.rule{ height:3px; width:52px; background:var(--gold); margin:14px 0 26px; }
+.hair{ height:1px; background:var(--line); border:none; margin:34px 0; }
+.dark .hair{ background:rgba(255,255,255,.16); }
+
+h1{ font-family:'Archivo',sans-serif; font-weight:800; font-size:clamp(38px,8vw,64px); line-height:.98; letter-spacing:-.02em; }
+h2{ font-family:'Archivo',sans-serif; font-weight:800; font-size:clamp(26px,5vw,38px); line-height:1.05; letter-spacing:-.015em; }
+h3{ font-family:'Archivo',sans-serif; font-weight:700; font-size:19px; line-height:1.25; }
+h4{ font-family:'Archivo',sans-serif; font-weight:700; font-size:13.5px; letter-spacing:.01em; color:var(--gold-d); }
+.dark h4{ color:var(--gold); }
+p{ font-size:15.5px; line-height:1.68; color:#28394A; }
+.dark p{ color:#C6CFD8; }
+.lead{ font-family:'Source Serif',serif; font-size:19px; line-height:1.5; color:#1B2C3D; }
+.dark .lead{ color:#E4E9EE; }
+.sm{ font-size:13px; color:var(--mut); }
+.dark .sm{ color:var(--mut-l); }
+
+/* ---- sections ---- */
+section{ padding:88px 0; }
+.dark{ background:var(--ink); color:var(--paper); }
+.tif{ background:var(--tif-bg); }
+
+/* ---- hero ---- */
+.hero{ padding:120px 0 90px; position:relative; overflow:hidden; }
+.hero .wrap{ position:relative; z-index:2; }
+.hero-bars{ position:absolute; top:0; right:0; width:40%; height:100%; z-index:1; opacity:.9; pointer-events:none; }
+.hero-bars i{ position:absolute; top:-20%; height:160%; width:16px; background:var(--gold); transform:rotate(20deg); }
+.eyebrow{ font-family:'Archivo',sans-serif; font-weight:700; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); margin-bottom:22px; }
+.hero h1{ color:#fff; max-width:600px; }
+.hero .lead{ margin-top:22px; max-width:480px; }
+.hero-meta{ margin-top:52px; padding-top:24px; border-top:1px solid rgba(255,255,255,.16); display:flex; flex-wrap:wrap; gap:24px; justify-content:space-between; align-items:flex-end; }
+.hero-meta .role{ font-family:'Archivo',sans-serif; font-weight:700; font-size:14px; color:#fff; }
+.hero-meta .brands{ font-size:12.5px; color:var(--mut-l); margin-top:4px; }
+.hero-meta .contact{ font-size:12.5px; color:var(--mut-l); text-align:right; line-height:1.7; }
+.hero-meta .contact a{ color:var(--gold); text-decoration:none; }
+
+/* ---- metrics ---- */
+.metrics{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:56px; }
+.metric{ border-top:3px solid var(--gold); padding-top:10px; }
+.metric .n{ font-family:'Archivo',sans-serif; font-weight:800; font-size:32px; letter-spacing:-.02em; color:#fff; line-height:1; }
+.metric .t{ font-size:11.5px; color:var(--mut-l); margin-top:6px; line-height:1.4; }
+
+/* ---- callout ---- */
+.callout{ background:var(--warm); border-left:3px solid var(--gold); padding:26px 30px; margin:40px 0; }
+.callout p{ font-family:'Source Serif',serif; font-size:18px; line-height:1.5; color:var(--ink); }
+
+/* ---- principles ---- */
+.principle{ display:flex; gap:22px; padding:26px 0; }
+.principle .no{ font-family:'Archivo',sans-serif; font-weight:900; font-size:24px; color:var(--gold); flex:none; width:34px; }
+.principle h3{ margin-bottom:6px; }
+
+/* ---- two col ---- */
+.two{ display:grid; grid-template-columns:1fr 1fr; gap:36px; }
+.two > * + *{ margin-top:0; }
+.stack > * + *{ margin-top:16px; }
+
+/* ---- case ---- */
+.case{ scroll-margin-top:20px; }
+.case-head{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:6px; }
+.case-no{ font-family:'Archivo',sans-serif; font-weight:900; font-size:44px; color:var(--warm); line-height:1; }
+.dark .case-no{ color:rgba(255,255,255,.09); }
+.tif .case-no{ color:#EBE1D2; }
+.case h2{ margin-top:20px; }
+.chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:36px; }
+.chip{ font-size:12px; font-weight:500; letter-spacing:.02em; padding:6px 13px; border:1px solid var(--line); border-radius:20px; color:#3A4A5A; }
+.dark .chip{ border-color:rgba(255,255,255,.2); color:#BCC7D2; }
+.tif .chip{ border-color:var(--tif-line); color:var(--tif-mut); }
+.pull{ font-family:'Source Serif',serif; font-size:19px; line-height:1.45; color:var(--ink); margin-top:6px; }
+.dark .pull{ color:#fff; }
+.tif .pull{ color:var(--tif-ink); }
+
+/* ---- sample card ---- */
+.sample{ background:#fff; border:1px solid var(--line); border-left:3px solid var(--gold); padding:28px 30px; margin:20px 0; }
+.dark .sample{ background:#12222F; border-color:rgba(255,255,255,.14); border-left-color:var(--gold); }
+.tif .sample{ border-color:var(--tif-line); border-left-color:var(--tif-gold); }
+.sample .kicker{ font-size:11.5px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--mut); margin-bottom:14px; }
+.dark .sample .kicker{ color:var(--mut-l); }
+.sample .hl{ font-family:'Archivo',sans-serif; font-weight:800; font-size:23px; line-height:1.12; margin-bottom:14px; }
+.dark .sample .hl{ color:#fff; }
+.sample p{ font-family:'Source Serif',serif; font-size:16.5px; line-height:1.55; color:#22323F; }
+.dark .sample p{ color:#C9D3DC; }
+.sample p + p{ margin-top:11px; }
+.sample .cta{ display:inline-block; margin-top:16px; font-family:'Archivo',sans-serif; font-weight:700; font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; background:var(--ink); color:var(--paper); padding:10px 20px; }
+.dark .sample .cta{ background:var(--gold); color:var(--ink); }
+.sample.mail p{ font-family:'Inter',sans-serif; font-size:14.5px; }
+.subject{ font-family:'Inter',sans-serif; font-size:14.5px; font-weight:600; padding-bottom:14px; margin-bottom:14px; border-bottom:1px solid var(--line); }
+.dark .subject{ border-color:rgba(255,255,255,.16); color:#fff; }
+.subject span{ font-weight:400; color:var(--mut); }
+
+.callout-note{ background:var(--warm); border-left:3px solid var(--gold); padding:16px 22px; margin:24px 0 0; }
+.callout-note p{ font-size:13.5px; font-style:italic; color:#5A4A2E; line-height:1.5; }
+.tif .callout-note{ background:#fff; border-left-color:var(--tif-gold); }
+
+.note{ font-size:12.5px; line-height:1.55; color:var(--mut); font-style:italic; margin-top:24px; }
+.dark .note{ color:var(--mut-l); }
+.tif .note{ color:var(--tif-mut); }
+
+/* ---- nav ---- */
+.nav{ position:sticky; top:0; z-index:50; background:rgba(251,250,247,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+.nav .wrap{ display:flex; align-items:center; justify-content:space-between; padding:14px 24px; max-width:760px; }
+.nav .name{ font-family:'Archivo',sans-serif; font-weight:800; font-size:14px; letter-spacing:-.01em; text-decoration:none; color:var(--ink); }
+.nav a.cta{ font-family:'Archivo',sans-serif; font-weight:700; font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; background:var(--ink); color:#fff; padding:9px 16px; text-decoration:none; }
+
+/* ---- close ---- */
+.close-cta{ display:inline-block; margin-top:34px; font-family:'Archivo',sans-serif; font-weight:700; font-size:13px; letter-spacing:.06em; text-transform:uppercase; background:var(--gold); color:var(--ink); padding:15px 30px; text-decoration:none; }
+.footer{ padding:50px 0 70px; }
+.footer .wrap{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px; align-items:flex-end; padding-top:30px; border-top:1px solid rgba(255,255,255,.16); }
+.footer .big{ font-family:'Archivo',sans-serif; font-weight:900; font-size:22px; letter-spacing:-.01em; color:#fff; }
+.footer .role{ color:var(--gold); font-size:12px; letter-spacing:.05em; margin-top:6px; }
+.footer .contact{ text-align:right; font-size:13px; color:var(--mut-l); line-height:1.8; }
+.footer .contact a{ color:var(--mut-l); text-decoration:none; }
+.footer .contact a:hover{ color:var(--gold); }
+
+@media (max-width:640px){
+  section{ padding:60px 0; }
+  .two{ grid-template-columns:1fr; gap:8px; }
+  .metrics{ grid-template-columns:repeat(2,1fr); row-gap:28px; }
+  .hero{ padding:90px 0 60px; }
+  .hero-bars{ width:60%; opacity:.5; }
+  .case-no{ font-size:30px; }
+  .footer .wrap{ flex-direction:column; align-items:flex-start; }
+  .footer .contact{ text-align:left; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="#top" class="name">RAFAEL GANZER</a>
+    <a class="cta" href="mailto:ctcrmg@gmail.com">Get in touch</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero dark" id="top">
+  <div class="hero-bars"><i style="right:8%"></i><i style="right:20%; opacity:.5"></i><i style="right:30%; opacity:.22"></i></div>
+  <div class="wrap">
+    <div class="eyebrow">Copywriting Portfolio · 2026</div>
+    <h1>Selected<br>work.</h1>
+    <p class="lead">Thirteen years of writing that had to do a job: sell a film, fill a course, launch a game, keep a customer. Four industries. Three languages.</p>
+
+    <div class="metrics">
+      <div class="metric"><div class="n">13</div><div class="t">YEARS IN MARKETING &amp; COMMUNICATION</div></div>
+      <div class="metric"><div class="n">4</div><div class="t">INDUSTRIES, CINEMA TO ONLINE GAMING</div></div>
+      <div class="metric"><div class="n">8</div><div class="t">LAUNCH CAMPAIGNS EVERY MONTH, TODAY</div></div>
+      <div class="metric"><div class="n">3</div><div class="t">LANGUAGES I WRITE AND SHIP IN</div></div>
+    </div>
+
+    <div class="hero-meta">
+      <div>
+        <div class="role">Content &amp; Brand Strategy · Copywriting · CRM</div>
+        <div class="brands">Cinemark · TAM Airlines · EF Education First · Blaze · ARRiSE</div>
+      </div>
+      <div class="contact">
+        <a href="mailto:ctcrmg@gmail.com">ctcrmg@gmail.com</a><br>
+        <a href="https://linkedin.com/in/rmgnz" target="_blank">linkedin.com/in/rmgnz</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- OPENING -->
+<section>
+  <div class="wrap">
+    <div class="lbl">Opening</div>
+    <div class="rule"></div>
+    <h2>Someone has to read it, and then do something about it.</h2>
+    <p class="lead" style="margin-top:20px">That is the whole job. Everything else in marketing is downstream of whether a stranger read the line and moved.</p>
+
+    <div class="two" style="margin-top:44px">
+      <div class="stack">
+        <p>I have spent thirteen years writing in four industries that could not be less alike. Cinema, where you have a poster and a weekend. Aviation, where the person reading is either booking a holiday or chartering a jet and you cannot talk to both the same way. Global education, where the buyer is a nineteen-year-old and the payer is their mother.</p>
+        <p>And for the last six years, online gaming, where a line has to be persuasive, on brand and legally defensible in the same breath, in a market whose rules changed underneath everyone halfway through.</p>
+      </div>
+      <div class="stack">
+        <p>What follows is a selection rather than an archive. I have cut everything that was there to fill a page. What is left is work I would defend in a room.</p>
+        <p>I have also included the thinking, not just the output. A headline on its own never explains why it worked, and the ability to explain why is the difference between a writer you brief and a writer you hand a problem to.</p>
+      </div>
+    </div>
+
+    <div class="callout"><p>I own voice, campaigns and CRM end to end, in three languages, in industries where a line has to be persuasive and legally defensible at the same time.</p></div>
+  </div>
+</section>
+
+<!-- HOW I WORK -->
+<section style="background:var(--warm)">
+  <div class="wrap">
+    <div class="lbl">How I work</div>
+    <div class="rule"></div>
+    <h2>Four things I believe, after thirteen years of being wrong.</h2>
+
+    <div style="margin-top:20px">
+      <div class="principle">
+        <div class="no">01</div>
+        <div><h3>The constraint is usually the idea.</h3><p>A legal restriction, a character limit, a market that will not accept the joke that worked next door. Writers treat these as damage. In practice the constraint is the only thing standing between you and the version everybody else already wrote.</p></div>
+      </div>
+      <hr class="hair" style="margin:0">
+      <div class="principle">
+        <div class="no">02</div>
+        <div><h3>Voice is a system, not a mood.</h3><p>&ldquo;Fun but premium&rdquo; is not a tone of voice, it is a feeling someone had in a meeting. A voice that survives contact with twelve writers and three markets needs rules you can break on purpose. I have built these, and I have had to enforce them.</p></div>
+      </div>
+      <hr class="hair" style="margin:0">
+      <div class="principle">
+        <div class="no">03</div>
+        <div><h3>Ship it, read it, rewrite it.</h3><p>Performance data settles arguments that would otherwise be settled by whoever is most senior in the room. I would rather put two honest versions live than spend a week defending one in a deck.</p></div>
+      </div>
+      <hr class="hair" style="margin:0">
+      <div class="principle">
+        <div class="no">04</div>
+        <div><h3>Translation is not localisation.</h3><p>A campaign that works in English and is then rendered accurately into Portuguese is a campaign that now works in English and lands flat in Brazil. I write in three languages, which mostly means I know when a line cannot survive the trip.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE 01 ARRISE -->
+<section class="dark case" id="arrise">
+  <div class="wrap">
+    <div class="case-head">
+      <div>
+        <div class="lbl">Case 01 · ARRiSE · iGaming</div>
+        <div class="sm" style="margin-top:6px">Content Coordinator, LATAM · Oct 2024 — present</div>
+      </div>
+      <div class="case-no">01</div>
+    </div>
+    <div class="rule"></div>
+    <h2>Eight launches a month, three languages, one voice.</h2>
+    <p class="lead" style="margin-top:20px">A global gaming supplier ships new product faster than most brands ship campaigns. Every launch needs an angle, and it cannot be last month&rsquo;s angle.</p>
+
+    <div class="two" style="margin-top:44px">
+      <div class="stack">
+        <h4>The situation</h4>
+        <p>LATAM is not one market. Brazil rewrote its licensing rules while everyone was mid-flight, and what you are allowed to promise a player in S&atilde;o Paulo is not what you can promise in Santiago or Mexico City. The same launch has to work in Portuguese, Spanish and English, past three sets of expectations and one regulator who is still deciding what it thinks.</p>
+        <h4 style="margin-top:10px">What I own</h4>
+        <p>Brand voice and campaign copy across the region. Product launch material. Market adaptation rather than translation. The editorial standards the region writes to. And the seat between marketing, product, legal and the local commercial teams, which is where most of the actual work happens.</p>
+      </div>
+      <div class="stack">
+        <h4>The thinking</h4>
+        <p>At that cadence the real risk is not a weak line. It is a format that quietly hardens. The eighth launch of the month starts to resemble the first, and nobody notices from the inside because everybody is busy shipping.</p>
+        <p>So I stopped reviewing case by case and wrote the standard down instead: what each launch format has to achieve, what it is not allowed to reuse, and where compliance sits in the flow rather than bolted onto the end of it.</p>
+        <p class="pull">Reviewing work is a bottleneck. Setting the standard the work gets written to is not.</p>
+      </div>
+    </div>
+
+    <div class="chips">
+      <span class="chip">Brand voice</span><span class="chip">Launch campaigns</span><span class="chip">PT / ES / EN</span>
+      <span class="chip">Regulated markets</span><span class="chip">Editorial standards</span><span class="chip">Cross-team delivery</span>
+    </div>
+
+    <!-- spec sample -->
+    <div style="margin-top:56px">
+      <div class="lbl">Format sample</div>
+      <div class="callout-note"><p>Conceptual piece — built to demonstrate the launch format above. Not an official ARRiSE release; game name and figures are illustrative.</p></div>
+      <div class="sample">
+        <div class="kicker">Game launch · Multi-market · PT / ES / EN</div>
+        <div class="hl">Same drop. Three markets.<br>One angle that survives all of them.</div>
+        <p><strong>PT-BR — site &amp; social</strong><br>Chegou o Lucky Ember. Cinco rolos, mec&acirc;nica de multiplicador em cascata, e um recurso de b&ocirc;nus que aumenta a cada giro sem vencer. Jogue com responsabilidade.</p>
+        <p><strong>ES-LATAM — site &amp; social</strong><br>Lleg&oacute; Lucky Ember. Cinco rodillos, multiplicador en cascada, y una bonificaci&oacute;n que crece con cada giro sin ganar. Juega con responsabilidad.</p>
+        <p><strong>EN — operator brief</strong><br>Lucky Ember ships with a cascading multiplier and an escalating bonus trigger built to reward variance without inflating volatility past the region&rsquo;s compliance ceiling.</p>
+      </div>
+      <p class="note">Live campaign copy from this role sits behind client confidentiality. Happy to walk through specific launches and decisions in conversation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CASE 02 GINGABET -->
+<section class="case" id="ginga">
+  <div class="wrap">
+    <div class="case-head">
+      <div><div class="lbl">Case 02 · GingaBet · Sports betting</div><div class="sm" style="margin-top:6px">Copywriter · Jul 2024 — Aug 2025 · freelance, concurrent</div></div>
+      <div class="case-no">02</div>
+    </div>
+    <div class="rule"></div>
+    <h2>A tone of voice that could survive contact with the data.</h2>
+    <p class="lead" style="margin-top:20px">I inherited a tone-of-voice document that described a feeling. Feelings do not settle arguments at four in the afternoon with a campaign going out at six.</p>
+
+    <div class="two" style="margin-top:44px">
+      <div class="stack">
+        <h4>The situation</h4>
+        <p>A Brazilian betting brand writing across social, CRM, paid and on-site, with several people producing copy and no shared answer to what the brand sounds like when it loses.</p>
+        <h4 style="margin-top:10px">What I did</h4>
+        <p>Campaign concepts, video scripts and promotional copy across every channel. Then rebuilt the tone-of-voice guide around decisions rather than adjectives, and iterated the messaging off performance data instead of whoever felt strongest in the meeting.</p>
+      </div>
+      <div class="stack">
+        <h4>The thinking</h4>
+        <p>A usable voice guide answers questions a writer actually has at speed. How long is a sentence. Do we use the second person. What do we say the morning after a bad result.</p>
+        <p class="pull">Guidelines are not a manifesto. They are a tool for the person writing at five to six.</p>
+      </div>
+    </div>
+    <div class="chips"><span class="chip">Tone of voice</span><span class="chip">Campaign concepts</span><span class="chip">Video scripts</span><span class="chip">CRM &amp; on-site</span></div>
+  </div>
+</section>
+
+<!-- CASE 03 BLAZE -->
+<section class="case" style="background:var(--warm)" id="blaze">
+  <div class="wrap">
+    <div class="case-head">
+      <div><div class="lbl">Case 03 · Blaze · Online gaming</div><div class="sm" style="margin-top:6px">Marketing &amp; Communication Analyst · Aug 2019 — Jan 2023</div></div>
+      <div class="case-no">03</div>
+    </div>
+    <div class="rule"></div>
+    <h2>Three and a half years inside a brand growing faster than its own processes.</h2>
+    <div class="two" style="margin-top:44px">
+      <div class="stack">
+        <h4>The situation</h4>
+        <p>I joined one of Brazil&rsquo;s fastest-growing online gaming brands and stayed through its steepest period of growth. Ran the day-to-day communication channels and produced the campaign content behind them.</p>
+      </div>
+      <div class="stack">
+        <h4>What it taught me</h4>
+        <p>Volume is not the hard part. The hard part is keeping the brand recognisable while the company underneath it changes shape every quarter.</p>
+        <p class="pull">Most reporting explains the past. It is more valuable pointed forwards.</p>
+      </div>
+    </div>
+    <div class="chips"><span class="chip">Channel ownership</span><span class="chip">Campaign content</span><span class="chip">Data-led planning</span></div>
+  </div>
+</section>
+
+<!-- CASE 04 AVIATRIX -->
+<section class="dark case" id="aviatrix">
+  <div class="wrap">
+    <div class="case-head">
+      <div><div class="lbl">Case 04 · Aviatrix · Localisation</div><div class="sm" style="margin-top:6px">Copywriter &amp; Localisation Specialist · Feb 2024 — Dec 2024 · freelance</div></div>
+      <div class="case-no">04</div>
+    </div>
+    <div class="rule"></div>
+    <h2>Every word is correct. The line is dead.</h2>
+    <p class="lead" style="margin-top:20px">This is what accurate translation does to marketing copy.</p>
+    <div class="two" style="margin-top:44px">
+      <div class="stack">
+        <h4>What I did</h4>
+        <p>Rebuilt rather than translated. The cultural reference changes because the original one means nothing here. The regulatory wording changes because it has to. The player-facing tone changes because Brazilian players are not addressed the way British ones are.</p>
+      </div>
+      <div class="stack">
+        <h4>The thinking</h4>
+        <p>A translator is measured on fidelity to the source. A copywriter is measured on what the reader does next.</p>
+        <p class="pull">Keep the intent. Rewrite everything else.</p>
+      </div>
+    </div>
+    <div class="chips"><span class="chip">EN → PT-BR</span><span class="chip">Transcreation</span><span class="chip">Regulatory wording</span></div>
+  </div>
+</section>
+
+<!-- TIFFANY -->
+<section class="tif case" id="tiffany">
+  <div class="wrap">
+    <div class="case-head">
+      <div><div class="lbl" style="color:var(--tif-gold)">Freelance · Tiffany &amp; Co. · Luxury retail</div><div class="sm" style="margin-top:6px; color:var(--tif-mut)">Copywriter, freelance · text only — presentation design below is my own</div></div>
+      <div class="case-no">05</div>
+    </div>
+    <div class="rule" style="background:var(--tif-gold)"></div>
+    <h2 style="color:var(--tif-ink)">Luxury doesn&rsquo;t need more adjectives.</h2>
+    <p class="lead" style="margin-top:20px; color:#4A3F32">It needs fewer of them, placed correctly. A freelance brief where the entire job was restraint.</p>
+
+    <div class="two" style="margin-top:44px">
+      <div class="stack">
+        <h4 style="color:var(--tif-gold)">The brief</h4>
+        <p style="color:var(--tif-ink)">Product and campaign copy for Tiffany &amp; Co., delivered as text only, no layout brief attached. The presentation here, including this design, is my own treatment for portfolio purposes.</p>
+        <h4 style="margin-top:10px; color:var(--tif-gold)">The thinking</h4>
+        <p style="color:var(--tif-ink)">Luxury copy fails in one of two directions: it lists superlatives until they cancel each other out, or it whispers so hard it says nothing. The brief was to write like the object was already in the room and didn&rsquo;t need selling, only naming well.</p>
+      </div>
+      <div class="sample">
+        <div class="kicker">Product copy · Jewelry collection</div>
+        <div class="hl" style="color:var(--tif-ink)">A line, not a chain.</div>
+        <p style="color:var(--tif-ink)">Worn close, closed with a clasp you will stop noticing by the second wear. The kind of piece that gets asked about once, in passing, by someone who already knows the answer.</p>
+        <p style="color:var(--tif-ink)">Made to be inherited, eventually. Worn daily, until then.</p>
+      </div>
+    </div>
+    <p class="note">Original copy rewritten here to current standard. Design and layout on this page are mine, created for this portfolio; the original delivery was text only.</p>
+  </div>
+</section>
+
+<!-- CASE EF -->
+<section class="case" id="ef">
+  <div class="wrap">
+    <div class="case-head">
+      <div><div class="lbl">Case 06 · EF Education First · Global education</div><div class="sm" style="margin-top:6px">Senior Copywriter &amp; Content Specialist · Jan 2019 — Jan 2023 · concurrent</div></div>
+      <div class="case-no">06</div>
+    </div>
+    <div class="rule"></div>
+    <h2>The reader is nineteen. The person paying is not.</h2>
+    <p class="lead" style="margin-top:20px">Study-abroad copy has to excite a teenager and reassure a parent, usually in the same paragraph.</p>
+
+    <div class="two" style="margin-top:44px">
+      <div class="stack">
+        <h4>The thinking</h4>
+        <p>The category default is to sell the destination: sunsets, skylines, friends you have not met yet. Everyone does this, which means the brochure for Chicago and the brochure for Cape Town read identically once you remove the photographs.</p>
+      </div>
+      <div class="stack">
+        <p>The version that works sells the specific thing the student will be able to do afterwards, and treats them as someone with an existing interest rather than someone to be enthused at.</p>
+        <p class="pull">Three pieces follow, rewritten to the standard I hold now.</p>
+      </div>
+    </div>
+
+    <div class="sample">
+      <div class="kicker">Architecture course · Chicago · Landing page</div>
+      <div class="hl">Chicago is the only city that will argue back.</div>
+      <p>Ten weeks in the city that invented the skyscraper and has been quarrelling about it ever since. You will stand in front of the Rookery and the Marina Towers with people who can tell you why the setback is there, why the developer wanted it gone, and who won.</p>
+      <p>You will come home unable to walk through a lobby without reading it.</p>
+      <span class="cta">See the course</span>
+    </div>
+
+    <div class="sample">
+      <div class="kicker">Study year · New York · Landing page</div>
+      <div class="hl">Your classroom has eight million people in it.</div>
+      <p>Business, arts or tech. Three months or a full year. Either way the syllabus ends at the door, and the rest happens on the 6 train, in a gallery in Chelsea, over a slice at one in the morning with people from nine countries learning the same language you are.</p>
+      <span class="cta">Apply for a place</span>
+    </div>
+
+    <div class="sample">
+      <div class="kicker">Volunteer programmes · East &amp; Southern Africa · Brochure</div>
+      <div class="hl">The projects were running before you arrived.</div>
+      <p>They will keep running after you leave. You will live with a host community rather than near one, and be given work that somebody was already doing and needed a second pair of hands for.</p>
+      <p>This is not a holiday with a conscience attached. It is work, and the work is the reason to go.</p>
+      <span class="cta">Read the programme</span>
+    </div>
+    <p class="note">Original versions written 2019–2021. Rewritten here to current standard, which is the honest thing to show: the brief was real, the judgement has improved. The Africa piece changed most — the original sold the continent as scenery; the rewrite sells the work instead.</p>
+  </div>
+</section>
+
+<!-- CASE CINEMARK -->
+<section class="dark case" id="cinemark">
+  <div class="wrap">
+    <div class="case-head">
+      <div><div class="lbl">Case 07 · Cinemark · Entertainment</div><div class="sm" style="margin-top:6px">Digital Marketing · Jan 2016 — Jan 2019</div></div>
+      <div class="case-no">07</div>
+    </div>
+    <div class="rule"></div>
+    <h2>You get a poster, a trailer and one weekend.</h2>
+    <p class="lead" style="margin-top:20px">Cinema marketing is the most honest job in the industry. Friday tells you whether you were right.</p>
+
+    <div class="two" style="margin-top:44px">
+      <div class="stack">
+        <h4>The thinking</h4>
+        <p>The studio sells the film. The exhibitor sells the decision to leave the house on a specific evening. Confusing them is why most cinema copy is a synopsis with an emoji on the end.</p>
+        <p class="pull">Nobody has ever chosen a Friday night because a film was described as unforgettable.</p>
+      </div>
+      <div class="stack">
+        <h4>The rule I wrote to</h4>
+        <p>Never describe a film with a word the film itself would not use. Gripping, unforgettable and edge-of-your-seat are what you write when you have not decided what you think.</p>
+      </div>
+    </div>
+
+    <div class="sample">
+      <div class="kicker">Release campaign · Social &amp; site</div>
+      <div class="hl">GET OUT</div>
+      <p>A weekend at the girlfriend&rsquo;s parents&rsquo; house. That is the entire premise, and it is the last sentence of this description that will feel safe.</p>
+      <p>Jordan Peele&rsquo;s first film as a director changed what a horror film is allowed to be about. It is funny for about eleven minutes. Then it is not.</p>
+      <span class="cta">Book tickets</span>
+    </div>
+    <p class="note">Written for the 2017 release slate. Rewritten here to current standard.</p>
+  </div>
+</section>
+
+<!-- CASE TAM -->
+<section class="case" id="tam">
+  <div class="wrap">
+    <div class="case-head">
+      <div><div class="lbl">Case 08 · TAM Airlines · Aviation</div><div class="sm" style="margin-top:6px">Copywriting, Social Media &amp; Executive Aviation · Jul 2013 — Dec 2015</div></div>
+      <div class="case-no">08</div>
+    </div>
+    <div class="rule"></div>
+    <h2>Two customers, one airline, and nothing in common.</h2>
+    <p class="lead" style="margin-top:20px">A family booking economy and a company chartering an aircraft are not the same reader, and the airline that writes to them the same way loses both.</p>
+
+    <div class="two" style="margin-top:44px">
+      <div class="stack">
+        <h4>The situation</h4>
+        <p>Social and CRM copy for a major international airline, including the segmentation work behind loyalty communication and the executive aviation side of the business — consumer and corporate, under one brand.</p>
+      </div>
+      <div class="stack">
+        <h4>The thinking</h4>
+        <p>Loyalty communication is the hardest brief in this business, because the reader has already bought. What is left is whether the message is worth the interruption.</p>
+        <p class="pull">The best deliverability strategy is having something to say.</p>
+      </div>
+    </div>
+    <div class="chips"><span class="chip">B2B &amp; B2C</span><span class="chip">Segmentation</span><span class="chip">Loyalty CRM</span><span class="chip">Executive aviation</span></div>
+  </div>
+</section>
+
+<!-- CRM & EMAIL -->
+<section class="dark">
+  <div class="wrap">
+    <div class="lbl">Discipline · CRM &amp; lifecycle email</div>
+    <div class="rule"></div>
+    <h2>Nobody opens an email because it was enthusiastic.</h2>
+    <p class="lead" style="margin-top:20px">Two pieces, both written to be read in four seconds by somebody on a phone.</p>
+
+    <div class="sample mail">
+      <div class="kicker">Promotion launch · Casino · EN</div>
+      <div class="subject">Subject: <span>€24m in prizes. Starts Wednesday.</span></div>
+      <p>Hey,</p>
+      <p>Drops &amp; Wins runs 26 July to 23 August. Forty-eight tournaments, twelve phases, 336 prizes a day.</p>
+      <p>€24,000,000 across slots. €6,000,000 across live casino.</p>
+      <span class="cta">Join Drops &amp; Wins</span>
+    </div>
+    <div class="sample mail">
+      <div class="kicker">Season open · Sportsbook · EN</div>
+      <div class="subject">Subject: <span>The season opens Thursday night.</span></div>
+      <p>Hey,</p>
+      <p>Kansas City host Detroit on Thursday to open the NFL season. Lines are live now, and they will not look like this by kickoff.</p>
+      <span class="cta">See this week&rsquo;s odds</span>
+    </div>
+    <p class="note">Both rebuilt from live sends. The originals opened with a greeting and an exclamation mark and reached the offer in paragraph three.</p>
+  </div>
+</section>
+
+<!-- RANGE -->
+<section style="background:var(--warm)">
+  <div class="wrap">
+    <div class="lbl">Range</div>
+    <div class="rule"></div>
+    <h2>What I actually write, on a normal week.</h2>
+    <div class="two" style="margin-top:40px">
+      <div class="stack">
+        <div><h4>Campaign &amp; brand</h4><p style="margin-top:6px">Campaign concepts and territories. Launch copy. Tone-of-voice systems and the editorial standards that keep them alive after the deck is closed.</p></div>
+        <div><h4>CRM &amp; lifecycle</h4><p style="margin-top:6px">Promotional and lifecycle email. Push and inbox. Onboarding, reactivation and retention journeys, including the segmentation logic underneath.</p></div>
+        <div><h4>Web &amp; product</h4><p style="margin-top:6px">Landing pages, product pages, promotional hubs. On-site messaging and the small unglamorous strings that decide whether a flow feels finished.</p></div>
+      </div>
+      <div class="stack">
+        <div><h4>Social &amp; video</h4><p style="margin-top:6px">Short-form scripts and hooks. Channel-native copy written for the platform rather than resized from a print ad.</p></div>
+        <div><h4>Localisation</h4><p style="margin-top:6px">English, Portuguese and Spanish. Transcreation rather than translation, with regulatory wording handled as part of the writing.</p></div>
+        <div><h4>The part nobody lists</h4><p style="margin-top:6px">Briefing other writers. Sitting between legal, product and commercial. Being the person who says the campaign is not there yet, and then fixing it.</p></div>
+      </div>
+    </div>
+    <hr class="hair">
+    <div class="two">
+      <div><h4>On AI</h4><p style="margin-top:6px">I use it daily, for drafts, variants and the mechanical half of multi-market work. It has made me faster and has not made me better. The judgement about what is worth saying is still the job.</p></div>
+      <div><h4>Tools</h4><p style="margin-top:6px">HubSpot, Salesforce Marketing Cloud, Braze, Optimove, Mailchimp. GA4, Looker Studio, GTM. Meta, Google, TikTok and LinkedIn ad platforms. Figma, Canva, Premiere Pro.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSE -->
+<footer class="dark footer">
+  <div class="wrap">
+    <div class="lbl">Close</div>
+    <div class="rule"></div>
+    <h2>If any of this sounded like the person you need, I would like to talk.</h2>
+    <p class="lead" style="margin-top:20px; max-width:520px">I am looking for work where the writing matters to the business rather than decorating it: a content operation to build or run, a brand voice that needs a proper owner, or a market that somebody has to make sense of.</p>
+    <p style="margin-top:16px; max-width:520px">I work remotely from Brazil, GMT-3, and have spent most of my career on international teams in English.</p>
+    <p class="pull" style="margin-top:10px; max-width:520px">And if you disagree with a single line in this page, that is a better first conversation than agreeing with all of it.</p>
+    <a class="close-cta" href="mailto:ctcrmg@gmail.com">ctcrmg@gmail.com</a>
+
+    <div class="wrap" style="padding:0">
+      <div class="big">RAFAEL GANZER</div>
+      <div class="role">CONTENT &amp; BRAND STRATEGY · COPYWRITING · CRM</div>
+    </div>
+    <div class="contact">
+      <a href="mailto:ctcrmg@gmail.com">ctcrmg@gmail.com</a><br>
+      <a href="https://linkedin.com/in/rmgnz" target="_blank">linkedin.com/in/rmgnz</a><br>
+      Brazil (GMT-3) · Remote, worldwide
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
