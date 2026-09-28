@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rafael Ganzer · Copywriting Portfolio</title>
-<meta name="description" content="Rafael Ganzer · Content & Brand Strategy, Copywriting, CRM. 13 years, 3 languages, iGaming, aviation, cinema and education.">
+<meta name="description" content="Rafael Ganzer · Content & Brand Strategy, Copywriting, CRM. Over a decade, 3 languages, iGaming, aviation, cinema and education.">
 <style>
 @font-face{font-family:'Archivo';src:url('fonts/archivo-latin-400-normal.woff2')format('woff2');font-weight:400;font-display:swap;}
 @font-face{font-family:'Archivo';src:url('fonts/archivo-latin-500-normal.woff2')format('woff2');font-weight:500;font-display:swap;}
@@ -175,10 +175,10 @@ section{ padding:88px 0; }
   <div class="wrap">
     <div class="eyebrow">Copywriting Portfolio · <span id="ano-atual">2026</span></div><script>document.getElementById('ano-atual').textContent=new Date().getFullYear();</script>
     <h1>Selected<br>work.</h1>
-    <p class="lead">Thirteen years of writing that had to do a job: sell a film, fill a course, launch a game, keep a customer. Four industries. Three languages.</p>
+    <p class="lead"><span class="anos" data-f="cap">Thirteen</span> years of writing that had to do a job: sell a film, fill a course, launch a game, keep a customer. Four industries. Three languages.</p>
 
     <div class="metrics">
-      <div class="metric"><div class="n">13</div><div class="t">YEARS IN MARKETING &amp; COMMUNICATION</div></div>
+      <div class="metric"><div class="n"><span class="anos" data-f="num">13</span></div><div class="t">YEARS IN MARKETING &amp; COMMUNICATION</div></div>
       <div class="metric"><div class="n">4</div><div class="t">INDUSTRIES, CINEMA TO ONLINE GAMING</div></div>
       <div class="metric"><div class="n">8</div><div class="t">LAUNCH CAMPAIGNS EVERY MONTH, TODAY</div></div>
       <div class="metric"><div class="n">3</div><div class="t">LANGUAGES I WRITE AND SHIP IN</div></div>
@@ -207,7 +207,7 @@ section{ padding:88px 0; }
 
     <div class="two" style="margin-top:44px">
       <div class="stack">
-        <p>I have spent thirteen years writing in four industries that could not be less alike. Cinema, where you have a poster and a weekend. Aviation, where the person reading is either booking a holiday or chartering a jet and you cannot talk to both the same way. Global education, where the buyer is a nineteen-year-old and the payer is their mother.</p>
+        <p>I have spent <span class="anos">thirteen</span> years writing in four industries that could not be less alike. Cinema, where you have a poster and a weekend. Aviation, where the person reading is either booking a holiday or chartering a jet and you cannot talk to both the same way. Global education, where the buyer is a nineteen-year-old and the payer is their mother.</p>
         <p>And for the last six years, online gaming, where a line has to be persuasive, on brand and legally defensible in the same breath, in a market whose rules changed underneath everyone halfway through.</p>
       </div>
       <div class="stack">
@@ -225,7 +225,7 @@ section{ padding:88px 0; }
   <div class="wrap">
     <div class="lbl">How I work</div>
     <div class="rule"></div>
-    <h2>Four things I believe, after thirteen years of being wrong.</h2>
+    <h2>Four things I believe, after <span class="anos">thirteen</span> years of being wrong.</h2>
 
     <div style="margin-top:20px">
       <div class="principle">
@@ -591,5 +591,6 @@ section{ padding:88px 0; }
   </div>
 </footer>
 
+<script>(function(){var n=new Date().getFullYear()-2013;var w=["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen","twenty","twenty-one","twenty-two","twenty-three","twenty-four","twenty-five"];document.querySelectorAll(".anos").forEach(function(e){var f=e.getAttribute("data-f");if(f==="num"){e.textContent=n;return;}var t=w[n]||String(n);e.textContent=f==="cap"?t.charAt(0).toUpperCase()+t.slice(1):t;});})();</script>
 </body>
 </html>
